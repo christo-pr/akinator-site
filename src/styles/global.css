@@ -14,6 +14,7 @@ header {
 .activate-camera-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 .activate-camera-container .message {
   display: flex;
