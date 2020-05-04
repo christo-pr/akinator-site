@@ -1,1 +1,2 @@
-export * from "./useAkinator"
+export * from "./useWebCam"
+export * from "./useDetection"

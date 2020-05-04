@@ -37,18 +37,28 @@ header {
 .is-relative {
   position: relative;
 }
+.close-video {
+  position: absolute;
+  top: 1.5rem;
+  right: 4rem;
+}
+.close-video:focus,
+.close-video:active {
+  outline: none;
+}
+.close-video::before {
+  color: rgb(238, 97, 97) !important;
+}
 video {
   width: 90%;
   height: 100%;
 }
-
 .loader {
   position: absolute;
   top: 10%;
   left: 0;
   right: 0;
 }
-
 .image-loader {
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -59,7 +69,6 @@ video {
 .loading-text {
   font-size: 30px;
 }
-
 .loading-text:after {
   overflow: hidden;
   display: inline-block;

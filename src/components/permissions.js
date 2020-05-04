@@ -1,7 +1,7 @@
 import React from "react"
 
 export const Permissions = props => {
-  const { requestFn } = props
+  const { requestFn, loading } = props
 
   return (
     <div className="activate-camera-container">
@@ -14,7 +14,7 @@ export const Permissions = props => {
             onClick={() => requestFn()}
             className="nes-btn is-primary"
           >
-            Enable camera
+            {loading ? "Requesting Camera..." : "Activate Camera"}
           </button>
         </div>
       </div>
