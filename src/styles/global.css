@@ -1,0 +1,95 @@
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+header {
+  border-bottom: 4px solid #d3d3d3;
+}
+.content-loading {
+  visibility: hidden;
+}
+.content-loaded {
+  visibility: visible;
+}
+.container-nav {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10px 10px 0;
+}
+.activate-camera-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.activate-camera-container .message {
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+}
+.activate-camera-container .message i {
+  margin-right: 70px;
+}
+.text-center {
+  text-align: center;
+}
+.is-relative {
+  position: relative;
+}
+video {
+  width: 90%;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.image-loader {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+.loading-text {
+  font-size: 30px;
+}
+
+.loading-text:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;
+  }
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
