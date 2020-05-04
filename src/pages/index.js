@@ -1,13 +1,12 @@
 import React from "react"
 
-import { Header, Permissions, Akinator } from "../components"
+import { Header, Akinator } from "../components"
 
 export default () => {
   return (
     <>
       <Header />
-      <div className="container">
-        <Permissions />
+      <div className="container is-relative">
         <Akinator />
       </div>
     </>
