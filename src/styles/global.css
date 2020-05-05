@@ -39,8 +39,8 @@ header {
 }
 .close-video {
   position: absolute;
-  bottom: 3.5rem;
-  right: 1.5rem;
+  right: -15px;
+  bottom: 50px;
 }
 .close-video:focus,
 .close-video:active {
@@ -50,8 +50,11 @@ header {
   color: rgb(238, 97, 97) !important;
 }
 video {
-  width: 90%;
-  height: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  object-fit: scale-down;
 }
 .loader {
   position: absolute;
@@ -81,10 +84,10 @@ video {
 
 .controls-btn {
   position: relative;
-  top: 4rem;
+  top: 4.2rem;
 }
 .controls-btn button {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 @keyframes ellipsis {

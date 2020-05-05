@@ -2,7 +2,7 @@ import React, { useRef } from "react"
 
 import { Permissions } from "./permissions"
 import { useWebCam, useDetection } from "../hooks"
-import { Loader, Controls } from "../components"
+import { Loader, Controls, Questions } from "../components"
 
 export const Akinator = props => {
   const videoContainer = useRef(null)
@@ -25,8 +25,9 @@ export const Akinator = props => {
         />
         <div className="nes-container with-title text-center">
           <h3 className="title">Akinator</h3>
-          <Controls />
-          <video src="" ref={videoContainer}></video>
+          <Questions show={cameraActive} />
+          <Controls show={cameraActive} />
+          <video src="" ref={videoContainer} poster="/webcam.png"></video>
         </div>
       </div>
     </>

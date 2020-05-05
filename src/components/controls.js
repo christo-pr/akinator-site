@@ -1,6 +1,10 @@
 import React from "react"
 
-export const Controls = () => {
+export const Controls = props => {
+  const { show } = props
+
+  if (!show) return null
+
   const answers = [
     { text: "Yes", style: "is-primary" },
     { text: "No", style: "is-success" },
