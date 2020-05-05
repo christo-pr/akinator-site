@@ -1,7 +1,9 @@
 import React from "react"
 
 export const Permissions = props => {
-  const { requestFn, loading } = props
+  const { requestFn, loading, show } = props
+
+  if (!show) return null
 
   return (
     <div className="activate-camera-container">

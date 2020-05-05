@@ -39,8 +39,8 @@ header {
 }
 .close-video {
   position: absolute;
-  top: 1.5rem;
-  right: 4rem;
+  bottom: 3.5rem;
+  right: 1.5rem;
 }
 .close-video:focus,
 .close-video:active {
@@ -77,6 +77,14 @@ video {
   animation: ellipsis steps(4, end) 900ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
+}
+
+.controls-btn {
+  position: relative;
+  top: 4rem;
+}
+.controls-btn button {
+  margin: 0 15px;
 }
 
 @keyframes ellipsis {
